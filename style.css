@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.semester {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 280px;
+  background-color: #f9f9f9;
+}
+.course {
+  background-color: #e0f7fa;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.course:hover {
+  background-color: #b2ebf2;
+}
+#details {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #aaa;
+  background: #fff8e1;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Psicología</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular - Psicología</h1>
+  <div class="grid">
+    <!-- Semestres y cursos -->
+    <div class="semester" id="sem1">
+      <h2>Semestre 1</h2>
+      <div class="course" onclick="showDetails('comunicacion1')">Comunicación I</div>
+      <div class="course" onclick="showDetails('taller_region')">Taller de análisis de la realidad regional</div>
+      <div class="course" onclick="showDetails('historia_psi')">Historia del pensamiento psicológico</div>
+      <div class="course" onclick="showDetails('bases_sociales')">Bases sociales del comportamiento</div>
+      <div class="course" onclick="showDetails('bases_biologicas')">Bases biológicas del comportamiento</div>
+      <div class="course" onclick="showDetails('electivo1')">Electivo UFIN</div>
+    </div>
+    <div class="semester" id="sem2">
+      <h2>Semestre 2</h2>
+      <div class="course" onclick="showDetails('ciudadania1')">Ciudadanía para el buen vivir I</div>
+      <div class="course" onclick="showDetails('social1')">Psicología social I</div>
+      <div class="course" onclick="showDetails('ciclo1')">Ciclo vital I</div>
+      <div class="course" onclick="showDetails('psicoanalitica')">Teoría psicoanalítica</div>
+      <div class="course" onclick="showDetails('humanista')">Teoría humanista</div>
+      <div class="course" onclick="showDetails('taller_comunicacion')">Taller de comunicación interpersonal</div>
+    </div>
+    <div class="semester" id="sem3">
+      <h2>Semestre 3</h2>
+      <div class="course" onclick="showDetails('ingles1')">Inglés I</div>
+      <div class="course" onclick="showDetails('social2')">Psicología social II</div>
+      <div class="course" onclick="showDetails('ciclo2')">Ciclo vital II</div>
+      <div class="course" onclick="showDetails('cognitiva')">Teoría cognitiva</div>
+      <div class="course" onclick="showDetails('sistemica')">Teoría sistémica</div>
+      <div class="course" onclick="showDetails('epistemologia')">Epistemología</div>
+    </div>
+    <div class="semester" id="sem4">
+      <h2>Semestre 4</h2>
+      <div class="course" onclick="showDetails('ingles2')">Inglés II</div>
+      <div class="course" onclick="showDetails('integracion')">Taller de integración</div>
+      <div class="course" onclick="showDetails('neuropsicologia')">Neuropsicología</div>
+      <div class="course" onclick="showDetails('psicop_infanto')">Psicopatología infanto juvenil</div>
+      <div class="course" onclick="showDetails('metodo1')">Metodología de la investigación I</div>
+      <div class="course" onclick="showDetails('electivo2')">Electivo UFIN</div>
+    </div>
+    <div class="semester" id="sem5">
+      <h2>Semestre 5</h2>
+      <div class="course" onclick="showDetails('ingles3')">Inglés III</div>
+      <div class="course" onclick="showDetails('organizacional')">Psicología organizacional</div>
+      <div class="course" onclick="showDetails('comunitaria')">Psicología comunitaria</div>
+      <div class="course" onclick="showDetails('psicop_adulto')">Psicopatología del adulto</div>
+      <div class="course" onclick="showDetails('metodo2')">Metodología de la investigación II</div>
+      <div class="course" onclick="showDetails('electivo3')">Electivo UFIN</div>
+    </div>
+    <div class="semester" id="sem6">
+      <h2>Semestre 6</h2>
+      <div class="course" onclick="showDetails('ingles4')">Inglés IV</div>
+      <div class="course" onclick="showDetails('clinica')">Psicología clínica</div>
+      <div class="course" onclick="showDetails('educacional')">Psicología educacional</div>
+      <div class="course" onclick="showDetails('eval_neuro')">Evaluación neurocognitiva</div>
+      <div class="course" onclick="showDetails('metodo3')">Metodología de la investigación III</div>
+    </div>
+    <div class="semester" id="sem7">
+      <h2>Semestre 7</h2>
+      <div class="course" onclick="showDetails('seminario1')">Seminario de licenciatura</div>
+      <div class="course" onclick="showDetails('eval_personalidad')">Evaluación de la personalidad</div>
+      <div class="course" onclick="showDetails('interv_psicoedu')">Intervención psicoeducativa</div>
+      <div class="course" onclick="showDetails('interv_organizacional')">Intervención organizacional</div>
+    </div>
+    <div class="semester" id="sem8">
+      <h2>Semestre 8</h2>
+      <div class="course" onclick="showDetails('seminario2')">Seminario de licenciatura II</div>
+      <div class="course" onclick="showDetails('psicodiagnostico')">Taller de psicodiagnóstico</div>
+      <div class="course" onclick="showDetails('interv_clinica')">Intervención clínica</div>
+      <div class="course" onclick="showDetails('interv_comunitaria')">Intervención comunitaria</div>
+    </div>
+    <div class="semester" id="sem9">
+      <h2>Semestre 9</h2>
+      <div class="course" onclick="showDetails('practica1')">Práctica profesional I</div>
+      <div class="course" onclick="showDetails('etica')">Taller de ética profesional</div>
+    </div>
+    <div class="semester" id="sem10">
+      <h2>Semestre 10</h2>
+      <div class="course" onclick="showDetails('practica2')">Práctica profesional II</div>
+      <div class="course" onclick="showDetails('examen')">Examen de título</div>
+    </div>
+  </div>
+  <div id="details" class="hidden">
+    <h3 id="course-title"></h3>
+    <p><strong>Prerrequisitos:</strong> <span id="course-prereqs"></span></p>
+    <button onclick="hideDetails()">Cerrar</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
